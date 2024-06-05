@@ -20,7 +20,7 @@ function displayItems(){
   for(let i = 0; i < itemsArray.length; i++){
     items += `<div class="item">
                 <div class="input-controller">
-                  <textarea disabled">${itemsArray[i]}</textarea>
+                  <textarea disabled>${itemsArray[i]}</textarea>
                   <div class="edit-controller">
                     <abbr title="mark as complete"><i class="fa-solid fa-check deleteBtn"></i></abbr>
                     <i class="fa-solid fa-pen-to-square editBtn"></i>
@@ -101,5 +101,4 @@ function updateItem(text, i){
 
 window.onload = function() {
   displayItems()
-
 };
