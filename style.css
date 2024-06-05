@@ -1,0 +1,173 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #F3F7EC;
+  font-family: 'Shadows Into Light', cursive;
+  min-height: 100vh;
+}
+
+button {
+  height: fit-content;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: #E88D67;
+}
+h1{
+  color: #E88D67;
+ text-align: center;
+
+}
+
+.app {
+  display: flex;
+  gap: 150px;
+  margin: auto;
+  padding-top: 50px;
+  color: #E88D67;
+  text-align: center;
+
+}
+
+.input-header {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0px 0px 10px 0px;
+  margin-top: 10px;
+  margin-left: 3%;
+}
+
+.to-do-input input {
+  width: 250px;
+  font-family: inherit;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+  outline: none;
+}
+
+.to-do-input button {
+  color: #ffffff;
+  font-family: inherit;
+  border: none;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.to-do-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+}
+
+.to-do-list i {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.to-do-list .fa-pen-to-square {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.to-do-list button {
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #006989;
+  border-radius: 3px;
+  padding: 8px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+.input-controller {
+  display: flex;
+  gap: 10px;
+}
+
+.input-controller textarea {
+  width: 250px;
+  height: 150px;
+  outline: none;
+  border: none;
+  resize: none;
+  color: white;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-family: inherit;
+  transition: all 0.30s ease-in-out;
+}
+
+textarea:focus {
+  border: 1px solid white;
+}
+
+.edit-controller {
+  display: flex;
+  gap: 5px;
+}
+
+.update-controller {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .app {
+    width: 95%;
+    text-align: center;
+  }
+
+  .input-header {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .to-do-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+  }
+  .to-do-input {
+    display: flex;
+  }
+
+  .to-do-input input {
+    width: 300px;
+  }
+
+  .app {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: auto;
+    padding-top: 50px;  
+  }
+
+  .input-controller textarea {
+    width: 250px;
+    height: 100px;
+  }
+}
+@media(max-width: 500px) {
+  .input-controller textarea {
+    width: 150px;
+    height: 100px;
+  }
+}
