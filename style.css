@@ -167,7 +167,7 @@ textarea:focus {
 }
 @media(max-width: 500px) {
   .input-controller textarea {
-    width: 150px;
+    width: 100px;
     height: 100px;
   }
 }
